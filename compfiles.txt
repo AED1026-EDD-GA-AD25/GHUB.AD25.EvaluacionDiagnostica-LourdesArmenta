@@ -1,2 +1,4 @@
 ./miTest/AppTest.java
 ./miPrincipal/Principal.java
+./miPrincipal/Libro.java
+./miPrincipal/InventarioLibros.java
