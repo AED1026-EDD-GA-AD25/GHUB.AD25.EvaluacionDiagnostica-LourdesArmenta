@@ -2,3 +2,4 @@
 ./miPrincipal/Principal.java
 ./miPrincipal/Libro.java
 ./miPrincipal/InventarioLibros.java
+./miPrincipal/DemostrarArreglos.java

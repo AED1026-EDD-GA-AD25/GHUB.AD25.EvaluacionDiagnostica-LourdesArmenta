@@ -35,4 +35,10 @@ public class Libro{
         this.anio = anio;
     }
 
+    @Override
+    public String toString(){
+        return "Libro: "+titulo+", "+autor+", "+anio;
+    }
+
+
 }
