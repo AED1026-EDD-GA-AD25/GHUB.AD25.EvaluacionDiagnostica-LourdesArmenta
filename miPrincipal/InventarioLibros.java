@@ -30,16 +30,15 @@ public class InventarioLibros{
     //busca en la lista a un libro por autor
     //si lo encuentra retorna el libro
     //sino retorna null
-    public Libro buscar(String autor){
+    public Libro[] buscar(String autor){
+        Libro[] librosBuscados = new Libro[listaLibros.length];
+        int contEncontrados = 0;
         for (int i=0;i<contador;i++){
             if(listaLibros[i].getAutor().equalsIgnoreCase(autor)){
-                return listaLibros[i];
+                librosBuscados[contEncontrados++]=listaLibros[i];              
             }
         }
-        //si llega a este lugar, es porque el libros
-        //con el autor deseado no existe
-        return null;
-
+        return librosBuscados;
     }
     //mostrar por pantalla toda lista de libros
     public void mostrar(){
